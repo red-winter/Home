@@ -1,0 +1,25 @@
+#ifndef CONST_CODES_H
+#define CONST_CODES_H
+
+#include <stdint.h>
+
+#define C_HOST_NAME "localhost"
+#define C_PORT_NUMBER 9000
+const uint32_t C_UNIC_LABEL = 0xBA00AB;
+
+const uint32_t C_DEV_NOTHING = 0;
+const uint32_t C_DEV_CONNECT = 1;
+const uint32_t C_DEV_DISCONECT = 2;
+
+struct ST_PROTOCOL {
+  ST_PROTOCOL() :
+    uiUnicLabel(C_UNIC_LABEL)
+
+  uint32_t uiUnicLabel;
+
+
+
+};
+
+
+#endif // CONST_CODES_H
